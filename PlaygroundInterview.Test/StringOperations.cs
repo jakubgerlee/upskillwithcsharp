@@ -13,42 +13,41 @@ namespace PlaygroundInterview.Test
 		[Test]
 		public void IsInputStartWithUppercase_ThrowNullReferenceException_InputIsNull()
 		{
-			string input = null;
 			var subject = new PlaygroundInterview.StringOperations();
 
-			Assert.Throws<NullReferenceException>(() => subject.IsInputStartWithUppercase(input));
+			Assert.Throws<NullReferenceException>(() => subject.IsInputStartWithUppercase(null));
 		}
 
 		[Test]
 		public void IsInputStartWithUppercase_ThrowIndexOutOfRange_InputIsEmpty()
 		{
-			var input = "";
+			const string input = "";
 			var subject = new PlaygroundInterview.StringOperations();
 
-			Assert.Throws<NullReferenceException>(() => subject.IsInputStartWithUppercase(input));
+			Assert.Throws<IndexOutOfRangeException>(() => subject.IsInputStartWithUppercase(input));
 
 		}
 
 		[Test]
 		public void IsInputStartWithUppercase_ThrowIndexOutOfRange_InputIsWithLowercase()
 		{
-			var input = "test";
+			const string input = "test";
 			var subject = new PlaygroundInterview.StringOperations();
 
 			var result = subject.IsInputStartWithUppercase(input);
 
-			Assert.False(result);
+			Assert.That(result, Is.False);
 		}
 
 		[Test]
 		public void IsInputStartWithUppercase_ThrowIndexOutOfRange_InputIsWithCapitalLetter()
 		{
-			var input = "Test";
+			const string input = "Test";
 			var subject = new PlaygroundInterview.StringOperations();
 
 			var result = subject.IsInputStartWithUppercase(input);
 
-			Assert.False(result);
+			Assert.That(result, Is.True);
 		}
 	}
 }

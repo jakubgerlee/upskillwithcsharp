@@ -13,9 +13,7 @@ namespace PlaygroundInterview
 				throw new IndexOutOfRangeException();
 
 			var firstLetter = input.First();
-
-
-			return true;
+			return firstLetter.ToString() == firstLetter.ToString().ToUpper();
 		}
 	}
 }
