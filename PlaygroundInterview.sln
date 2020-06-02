@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaygroundInterview", "PlaygroundInterview\PlaygroundInterview.csproj", "{1238A6F5-A37F-47D6-982C-6BA9922A61C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaygroundInterview.Test", "PlaygroundInterview.Test\PlaygroundInterview.Test.csproj", "{5613A577-0B87-465E-B765-1CD3527F7C53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1238A6F5-A37F-47D6-982C-6BA9922A61C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1238A6F5-A37F-47D6-982C-6BA9922A61C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1238A6F5-A37F-47D6-982C-6BA9922A61C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1238A6F5-A37F-47D6-982C-6BA9922A61C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5613A577-0B87-465E-B765-1CD3527F7C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5613A577-0B87-465E-B765-1CD3527F7C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5613A577-0B87-465E-B765-1CD3527F7C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5613A577-0B87-465E-B765-1CD3527F7C53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BB55663-CE40-45F1-84B6-B1060AD0A3FF}
+	EndGlobalSection
+EndGlobal
